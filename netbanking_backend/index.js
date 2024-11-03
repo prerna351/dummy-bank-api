@@ -30,7 +30,7 @@ app.post("/sendWebhookRequest", async(req, res) => {
         }
         );
   
-        if (response.status === 200) {
+        if (response.status == 200) {
           
           console.log('Webhook response:', response.data);
           return res.status(200).json({
